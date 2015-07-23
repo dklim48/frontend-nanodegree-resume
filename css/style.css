@@ -141,6 +141,15 @@ a {
   padding: 10px;
 }
 
+.flex-box-skills {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
 .center-content {
   padding: 2.5% 5%;
 }
@@ -198,6 +207,7 @@ span {
   display: block;
   height: 100%;
   margin: 0 5%;
+  padding-bottom: 10px;
 }
 
 #map-div {
