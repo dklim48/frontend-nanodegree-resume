@@ -105,7 +105,7 @@ var education = {
             "majors":["Computer Engineering"],
             "location":"Durham, NH",
             "dates":2006,
-            "url":"www.unh.edu"
+            "url":"http://www.unh.edu"
         },
         {
             "name":"Timerlane Regional High School",
@@ -121,7 +121,7 @@ var education = {
             "title": "Front End Nanodegree",
             "school": "Udacity",
             "date": 2015,
-            "url": "www.udacity.com",
+            "url": "http://www.udacity.com",
         }
     ],
     "display": function () {
