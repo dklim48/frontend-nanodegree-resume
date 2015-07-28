@@ -1,0 +1,32 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="school-element">
+  <template>
+    <div class="education-entry">
+      <a href="{{url}}"><span class="local">{{name}}</span> -- <span class="local">{{degree}}</span></a>
+      <div class="date-text">{{gradyear}}</div>
+      <div class="location-text">{{location}}</div>
+      <em>
+        <br>Major: <span class="local">{{major}}</span>
+      </em>
+    </div>
+  </template>
+  <style>
+    .local {
+      padding: 0;
+    }
+  </style>
+  <script>
+    Polymer({
+      is:"school-element",
+      properties: {
+        name: String,
+        degree: String,
+        gradyear: String,
+        location: String,
+        major: String,
+        url: String
+      }
+   });
+ </script>
+</dom-module>

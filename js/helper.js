@@ -42,19 +42,6 @@ var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
-
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
-
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
@@ -65,7 +52,7 @@ The International Name challenge in Lesson 2 where you'll create a function that
 $(document).ready(function() {
   $('button').click(function() {
     var iName = inName() || function(){};
-    $('#name').html(iName);  
+    $('#name').html(iName);
   });
 });
 
@@ -121,14 +108,13 @@ function initializeMap() {
 
     // initializes an empty array
     var locations = [];
-
-    // adds the single location property from bio to the locations array
-    locations.push(bio.contacts.location);
+    locations = document.getElementsByClassName('location-text')[0].getAttribute("innerHTML")
 
     // iterates through school locations and appends each location to
     // the locations array
-    for (var school in education.schools) {
-      locations.push(education.schools[school].location);
+    var destinations = $(".")
+    for (var location in destinations) {
+      locations.push(destinations[location].getAttribute("textContent"));
     }
 
     // iterates through work locations and appends each location to

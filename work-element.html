@@ -1,0 +1,32 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="work-element">
+  <template>
+    <div class="work-entry">
+      <a href="{{url}}"><span class="local">{{employer}}</span> - <span class="local">{{title}}</span></a>
+      <div class="date-text">{{dates}}</div>
+      <div class="location-text">{{location}}</div>
+      <p>
+        <br>
+        <div class="content-wrapper"><content></content></div>
+      </p>
+    </div>
+  </template>
+  <style>
+    .local {
+      padding: 0;
+    }
+  </style>
+  <script>
+    Polymer({
+      is:"work-element",
+      properties: {
+        employer: String,
+        url: String,
+        title: String,
+        dates: String,
+        location: String
+      }
+   });
+ </script>
+</dom-module>

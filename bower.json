@@ -1,0 +1,29 @@
+{
+  "name": "Frontend Resume WebComponents",
+  "version": ".5",
+  "description": "Creating a Frontend application using Polymer",
+  "main": "index",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "none"
+  ],
+  "authors": [
+    "David Klimaszewski"
+  ],
+  "license": "MIT",
+  "homepage": "none",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "google-map": "GoogleWebComponents/google-map#~1.0.3",
+    "paper-material": "PolymerElements/paper-material#~1.0.1",
+    "paper-header-panel": "PolymerElements/paper-header-panel#~1.0.3"
+  }
+}

@@ -1,0 +1,27 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="online-element">
+  <template>
+    <div class="education-entry">
+      <a href="{{url}}"><span class="local">{{title}}</span> -- <span class="local">{{school}}</span></a>
+      <div class="date-text">{{date}}</div>
+      <br><a href="{{url}}">{{url}}</a>
+    </div>
+  </template>
+  <style>
+    .local {
+      padding: 0;
+    }
+  </style>
+  <script>
+    Polymer({
+      is:"online-element",
+      properties: {
+        title: String,
+        school: String,
+        date: String,
+        url: String
+      }
+   });
+ </script>
+</dom-module>
