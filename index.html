@@ -53,21 +53,21 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <link rel="import" href="online-element.html">
   <link rel="import" href="work-element.html">
   <link rel="import" href="bower_components/paper-material/paper-material.html">
+  <link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
   <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-  <div id="main">
+  <paper-header-panel mode="waterfall">
     <!--
     Everything from here to the <script> tag below is the skeleton of your
     website. Your code will add information to each of the sections of the
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-    <div id="header" class="center-content clear-fix paper-header">
+    <div id="header" class="paper-header center-content clear-fix">
       <ul id="topContacts" class="flex-box"></ul>
     </div>
-    <div style="clear: both;"></div>
     <paper-material class="main_section" elevation="2">
       <div id="workExperience">
         <h2>Work Experience</h2>
@@ -105,7 +105,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
-  </div>
+  </paper-header-panel>
 
   <!--
   The next line tells the browser where to download the JavaScript file you'll be

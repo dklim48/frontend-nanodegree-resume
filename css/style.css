@@ -27,7 +27,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: rgb(255, 183, 77);
   line-height: 48px;
   display: inline;
 }
@@ -63,11 +63,12 @@ h5 {
 }
 
 .main_section {
-  width: 75%;
+  width: 66%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 .date-text {
@@ -113,11 +114,11 @@ a {
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: rgb(255, 183, 77);;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: rgb(255, 183, 77);
 }
 
 .white-text {
@@ -137,7 +138,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #f3f3f3;
 }
 
 .flex-box {
@@ -159,7 +160,7 @@ a {
 }
 
 .center-content {
-  padding: 2.5% 5%;
+  padding: .5% 5%;
 }
 
 ul {
@@ -183,6 +184,7 @@ span {
 
 #lets-connect {
   text-align: center;
+  color: #4a4a4a;
 }
 
 /* Media queries to handle various device widths */
@@ -229,4 +231,13 @@ span {
   .biopic {
     display: block;
   }
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+}
+
+#mainPanel {
+  background-color: rgb(255, 183, 77);
 }
